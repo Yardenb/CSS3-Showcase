@@ -1,0 +1,27 @@
+{
+  "name": "showcase",
+  "version": "1.0.0",
+  "description": "landing page",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass ./assets/sass/main.scss ./assets/css/style.css -w",
+    "compile:sass": "node-sass ./assets/sass/main.scss ./assets/css/style.comp.css",
+    "concat:css": "concat -o ./assets/css/style.concat.css ./assets/css/icon-font.css ./assets/css/style.comp.css",
+    "prefix:css": "npx postcss ./assets/css/style.concat.css --use autoprefixer -o ./assets/css/styleprefix.css",
+    "compress:css": "node-sass ./assets/css/styleprefix.css ./assets/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 10 versions"
+  ],
+  "author": "Yarden Buzaglo",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.4.7",
+    "concat": "^1.0.3",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.1"
+  }
+}

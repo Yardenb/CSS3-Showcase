@@ -1,0 +1,33 @@
+.heading-primary{
+    color: $color-black;
+    text-transform: uppercase;
+    background-color: rgba($color-white, 0.25);
+    border-radius: 0.4rem;
+    margin-bottom: 12rem;
+    backface-visibility: hidden;
+    overflow: hidden;
+
+    &--main{
+        display: block;
+        font-weight: 700;
+        font-size: 4rem;
+        letter-spacing: 2.5rem;
+        padding-left: 2.5rem;
+        animation: movePrimary-main 1.8s ease-out;
+        @include respond(phone){
+            letter-spacing: 1rem;
+            font-size: 3rem;
+        }
+    }
+    &--sub{
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.5rem;
+        animation: movePrimarySub 1.8s  ease-out;
+        @include respond(phone){
+            letter-spacing: 1rem;
+            font-size: 1.5rem;
+        }
+    }
+}

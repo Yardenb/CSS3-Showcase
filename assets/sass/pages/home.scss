@@ -1,0 +1,40 @@
+@import '../abstract/vars.scss';
+.section-about{
+    background-color: $color-grey-light-1;
+    padding: 25rem 0;
+    margin-top: -20vh;
+    @include respond(tab-port){
+        padding: 20rem 0;
+    }
+}
+.section-feature{
+    padding: 20rem 0;
+    background-image:linear-gradient(to right bottom, rgba($color-white, 0.8), rgba($color-black, 0.07)) ,url(../img/floor8.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: skewY(-7deg);
+    background-color: $color-grey-light-1;
+    & > *{
+        transform: skewY(7deg)
+    }
+    margin-top:-10rem;
+    @include respond(tab-port){
+        padding: 15rem 0;
+    }
+} 
+.section-songs{
+    background-color: $color-grey-light-1;
+    padding: 25rem 0 15rem;
+    margin-top: -10rem;
+    @include respond(tab-port){
+        padding: 20rem 0 10rem;
+    }
+    
+}
+.section-facts{
+    padding: 15rem 0;
+    position: relative;
+    @include respond(tab-port){
+        padding: 10rem 0;
+    }
+}

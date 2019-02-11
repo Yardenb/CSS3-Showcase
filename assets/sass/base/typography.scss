@@ -1,0 +1,50 @@
+@import '../abstract/vars.scss';
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-grey;
+    background-color: $color-grey-light-1;
+}
+.heading-secondary{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    background-image: linear-gradient(to right,$color-primary-light, $color-primary-dark );
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    transition: 0.3s;
+    &:hover{
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2)
+    }
+    &--black{
+        color: $color-black;
+        &:hover{
+            transform: scale(1.1) ;
+        }
+    }
+    
+} 
+.white-headline-box{
+    background-color: rgba($color-white, 0.5);
+    padding: 2rem;
+    text-align: center;
+    margin: 0 auto 4rem;
+    border-radius: 0.4rem;
+    transition: 0.3s;
+}
+.heading-tertiary{
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.paragraph{
+    font-size: $default-font-size;
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}

@@ -1,0 +1,23 @@
+@import './abstract/fun.scss';
+@import './abstract/mixins.scss';
+@import './abstract/vars.scss';
+
+@import './base/base.scss';
+@import './base/animations.scss';
+@import './base/typography.scss';
+@import './base/utils.scss';
+
+@import './cmps/heading-primary.scss';
+@import './cmps/btn.scss';
+@import './cmps/composition.scss';
+@import './cmps/feature-box.scss';
+@import './cmps/card.scss';
+@import './cmps/fact.scss';
+@import './cmps/bg-video.scss';
+
+@import './layout/header.scss';
+@import './layout/grid.scss';
+@import './layout/footer.scss';
+@import './layout/navigation.scss';
+
+@import './pages/home.scss';
